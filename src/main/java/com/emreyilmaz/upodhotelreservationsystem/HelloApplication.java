@@ -18,13 +18,7 @@ import static com.emreyilmaz.upodhotelreservationsystem.Utils.LOGO;
 
 
 public class HelloApplication extends Application {
-/*
-    private ObservableList<Room> roomsList = FXCollections.observableArrayList();
-    private ObservableList<Customers> customersList = FXCollections.observableArrayList();
-    private ObservableList<Reservations> reservationsList = FXCollections.observableArrayList();
-    private ObservableList<Features> featuresList = FXCollections.observableArrayList();
-    private ObservableList<Services> servicesList = FXCollections.observableArrayList();
-*/
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-login.fxml"));
