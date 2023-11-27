@@ -11,6 +11,11 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 
 public class HelloApplication extends Application {
@@ -20,14 +25,17 @@ public class HelloApplication extends Application {
     private ObservableList<Reservations> reservationsList = FXCollections.observableArrayList();
     private ObservableList<Features> featuresList = FXCollections.observableArrayList();
     private ObservableList<Services> servicesList = FXCollections.observableArrayList();
-
+    Path rootPaths = Paths.get(".").normalize().toAbsolutePath();;
+    Path filePath = Paths.get(rootPaths.toString(),"src", "main", "resources", "com", "emreyilmaz", "upodhotelreservationsystem","img","icon_upod.png");
+    Image icon = new Image(filePath.toUri().toString());
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-login.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         stage.setTitle("Upod Hotel & Resort Reservation Manager System");
-        Image icon = new Image("C:\\Users\\emrey\\Masaüstü\\Upod\\upodHotelReservationSystem\\src\\main\\resources\\com\\emreyilmaz\\upodhotelreservationsystem\\img\\icon_upod.png");
+
+
         stage.getIcons().add(icon);
         stage.setScene(scene);
 
