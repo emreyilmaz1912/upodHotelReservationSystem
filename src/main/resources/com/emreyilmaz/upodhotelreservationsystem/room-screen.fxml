@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.emreyilmaz.upodhotelreservationsystem.controllers.RoomController">
+    <children>
+        <AnchorPane layoutY="-6.0" prefHeight="54.0" prefWidth="800.0" style="-fx-background-color: #4f0184;">
+            <children>
+                <ImageView fitHeight="45.0" fitWidth="113.0" layoutX="53.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/logo.png" />
+                    </image></ImageView>
+                <Label layoutX="419.0" layoutY="10.0" prefHeight="35.0" prefWidth="357.0" text="Hotel &amp; Resort Reservation System" textFill="WHITE">
+                    <font>
+                        <Font name="Comic Sans MS" size="21.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="-3.0" layoutY="48.0" prefHeight="453.0" prefWidth="138.0" style="-fx-background-color: #49006b;">
+            <children>
+                <Button fx:id="buttonRooms" layoutX="1.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="136.0" style="-fx-background-color: #dc2f30; -fx-border-color: #4993be;" text="Rooms" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonFeatures" layoutX="1.0" layoutY="48.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Features" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonServices" layoutX="1.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Services" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonCustomers" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Customers" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="reservationsServicesButton" layoutX="1.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Reservations Services" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonNewRoom" layoutX="11.0" layoutY="264.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: #dc2f30;" text="New Room" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonEditRoom" layoutX="11.0" layoutY="305.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: #dc2f30;" text="Edit Room" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonDeleteRoom" layoutX="11.0" layoutY="345.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: Transparent; -fx-border-color: #dc2f30;" text="Delete Room" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="logOut" layoutX="36.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Log Out">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Line endX="81.0" layoutX="63.0" layoutY="249.0" startX="-63.0" stroke="WHITE" />
+                <Line endX="73.5" layoutX="69.0" layoutY="202.0" startX="-63.0" stroke="WHITE" />
+                <Button fx:id="mainPage" layoutX="2.0" layoutY="213.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: Transparent; -fx-border-color: #008080;" text="Main Page" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="135.0" layoutY="48.0" prefHeight="453.0" prefWidth="662.0">
+         <children>
+             <TableView fx:id="roomTableView" layoutX="21.0" layoutY="30.0" prefHeight="384.0" prefWidth="625.0">
+                 <columns>
+                     <TableColumn fx:id="columnId" prefWidth="42.0" text="ID" />
+                     <TableColumn fx:id="columnRoomName" prefWidth="95.0" text="Room-Name" />
+                     <TableColumn fx:id="columnCapacity" prefWidth="101.0" text="Capacity" />
+                     <TableColumn fx:id="columnPrice" prefWidth="76.0" text="Price" />
+                     <TableColumn fx:id="columnFeatures" prefWidth="99.0" text="Features" />
+                     <TableColumn fx:id="columnTotalRooms" prefWidth="85.0" text="Total Rooms" />
+                     <TableColumn fx:id="columnAvailableRooms" prefWidth="126.0" text="Available Rooms" />
+                 </columns>
+             </TableView>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

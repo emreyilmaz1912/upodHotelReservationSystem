@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.emreyilmaz.upodhotelreservationsystem.controllers.LoginControler">
+    <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="570.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <AnchorPane layoutX="-6.0" prefHeight="153.0" prefWidth="909.0" style="-fx-background-color: #4f0184;">
+                <children>
+                    <Label layoutX="373.0" layoutY="113.0" prefHeight="32.0" prefWidth="175.0" text="RESORT HOTEL &amp; SPA" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="Arial Black" size="14.0" />
+                        </font>
+                    </Label>
+               <ImageView fitHeight="113.0" fitWidth="224.0" layoutX="349.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@img/logo.png" />
+                  </image></ImageView>
+                </children>
+            </AnchorPane>
+            <AnchorPane layoutY="146.0" prefHeight="430.0" prefWidth="901.0" style="-fx-background-color: #4f0184;">
+                <children>
+                    <ImageView fitHeight="45.0" fitWidth="60.0" layoutX="201.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="649.2934799194336">
+                        <effect>
+                            <Lighting bumpInput="$null" diffuseConstant="2.0" light="$null" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.35" />
+                        </effect>
+                  <image>
+                     <Image url="@img/user_icon.png" />
+                  </image>
+                        
+                    </ImageView>
+                    <ImageView fitHeight="45.0" fitWidth="51.0" layoutX="202.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                        
+                        <effect>
+                            <Lighting diffuseConstant="2.0" light="$null" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+                                <bumpInput>
+                                    <Shadow />
+                                </bumpInput>
+                            </Lighting>
+                        </effect>
+                  <image>
+                     <Image url="@img/key.png" />
+                  </image>
+                    </ImageView>
+                    <TextField fx:id="tf_username" layoutX="320.0" layoutY="93.0" prefHeight="45.0" prefWidth="278.0" promptText="Username" />
+                    <Label layoutX="386.0" layoutY="28.0" prefHeight="45.0" prefWidth="130.0" text="User Login" textFill="WHITE">
+                        <font>
+                            <Font name="Arial Black" size="19.0" />
+                        </font>
+                    </Label>
+                    <Line endX="837.0" layoutX="63.0" layoutY="14.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                    <Line endX="-131.0" endY="111.0" layoutX="416.0" layoutY="95.0" startX="-131.0" stroke="WHITE" strokeWidth="2.0" />
+                    <Label layoutX="573.0" layoutY="382.0" prefHeight="17.0" prefWidth="301.0" text="For user operations, please contact your administrator." textFill="WHITE" />
+                    <Button fx:id="button_login" layoutX="384.0" layoutY="310.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" text="LOGIN">
+                        <font>
+                            <Font name="Arial Black" size="12.0" />
+                        </font>
+                    </Button>
+                    <ImageView fitHeight="60.0" fitWidth="75.0" layoutX="410.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                      
+                        <effect>
+                            <Lighting diffuseConstant="1.16" specularConstant="1.96" specularExponent="0.0" surfaceScale="0.0">
+                                <bumpInput>
+                                    <Lighting>
+                                        <bumpInput>
+                                            <Shadow />
+                                        </bumpInput>
+                                        <light>
+                                            <Light.Distant />
+                                        </light>
+                                    </Lighting>
+                                </bumpInput>
+                                <light>
+                                    <Light.Distant />
+                                </light>
+                            </Lighting>
+                        </effect>
+                  <image>
+                     <Image url="@img/keyhole.png" />
+                  </image>
+                    </ImageView>
+               <PasswordField fx:id="tf_password" layoutX="320.0" layoutY="149.0" prefHeight="45.0" prefWidth="278.0" promptText="Password" />
+                </children>
+            </AnchorPane>
+        </children>
+    </Pane>
+</AnchorPane>

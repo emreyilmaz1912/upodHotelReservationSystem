@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.emreyilmaz.upodhotelreservationsystem.controllers.newItemsController.NewReservationController">
+    <children>
+        <AnchorPane layoutY="-6.0" prefHeight="54.0" prefWidth="800.0" style="-fx-background-color: #4f0184;">
+            <children>
+                <ImageView fitHeight="45.0" fitWidth="113.0" layoutX="53.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/logo.png" />
+                    </image></ImageView>
+                <Label layoutX="419.0" layoutY="10.0" prefHeight="35.0" prefWidth="357.0" text="Hotel &amp; Resort Reservation System" textFill="WHITE">
+                    <font>
+                        <Font name="Comic Sans MS" size="21.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="-3.0" layoutY="48.0" prefHeight="453.0" prefWidth="138.0" style="-fx-background-color: #49006b;">
+            <children>
+                <Button fx:id="buttonRooms" layoutX="1.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="136.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Rooms" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonFeatures" layoutX="1.0" layoutY="48.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Features" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonServices" layoutX="1.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Services" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonCustomers" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Customers" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="reservationsServicesButton" layoutX="1.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: Transparent; -fx-border-color: #4993be;" text="Reservations Services" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonNewReservation" layoutX="11.0" layoutY="264.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #cd6600; -fx-border-color: #dc2f30;" text="New Reservation" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonEditReservation" layoutX="11.0" layoutY="305.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: Transparent; -fx-border-color: #dc2f30;" text="Edit Reservation" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="buttonDeleteReservation" layoutX="11.0" layoutY="345.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: Transparent; -fx-border-color: #dc2f30;" text="Delete Reservation" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Button fx:id="logOut" layoutX="36.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Log Out">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+                <Line endX="81.0" layoutX="63.0" layoutY="249.0" startX="-63.0" stroke="WHITE" />
+                <Line endX="73.5" layoutX="69.0" layoutY="202.0" startX="-63.0" stroke="WHITE" />
+                <Button fx:id="mainPage" layoutX="2.0" layoutY="213.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: Transparent; -fx-border-color: #008080;" text="Main Page" textFill="WHITE">
+                    <effect>
+                        <DropShadow height="7.81" radius="3.7725" width="9.28" />
+                    </effect>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="135.0" layoutY="48.0" prefHeight="453.0" prefWidth="662.0">
+            <Button fx:id="buttonSave" layoutX="344.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleNewReservationButtonClick" prefHeight="25.0" prefWidth="195.0" text="Save Reservation" />
+            <HBox alignment="CENTER_LEFT" layoutX="72.0" layoutY="150.0" prefHeight="35.0" prefWidth="427.0">
+                <children>
+                    <DatePicker fx:id="checkInDatePicker" prefHeight="25.0" prefWidth="230.0" promptText="Check-In Date :" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="72.0" layoutY="192.0" prefHeight="35.0" prefWidth="427.0">
+                <children>
+                    <DatePicker fx:id="checkOutDatePicker" prefHeight="25.0" prefWidth="232.0" promptText="Check-Out Date :" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="72.0" layoutY="230.0" prefHeight="35.0" prefWidth="427.0">
+                <children>
+                    <DatePicker fx:id="checkedInPicker" prefHeight="25.0" prefWidth="235.0" promptText="Checked-In :" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="72.0" layoutY="271.0" prefHeight="35.0" prefWidth="427.0">
+                <children>
+                    <DatePicker fx:id="checkedOutPicker" prefHeight="25.0" prefWidth="233.0" promptText="Cjecked-Out :" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="72.0" layoutY="111.0" prefHeight="35.0" prefWidth="427.0">
+                <children>
+                    <TextField fx:id="roomNameTextField" prefHeight="26.0" prefWidth="229.0" promptText="Room Name :">
+                        <HBox.margin>
+                            <Insets left="0.0" />
+                        </HBox.margin>
+                    </TextField>
+                    <ComboBox fx:id="roomComboBox" prefHeight="25.0" prefWidth="198.0" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="72.0" layoutY="310.0" prefHeight="35.0" prefWidth="427.0">
+                <children>
+                    <TextField fx:id="customerNameTextField" prefHeight="26.0" prefWidth="229.0" promptText="Customer ID :">
+                        <HBox.margin>
+                            <Insets left="0.0" />
+                        </HBox.margin>
+                    </TextField>
+                    <ComboBox fx:id="customersComboBox" prefHeight="25.0" prefWidth="198.0" />
+                </children>
+            </HBox>
+        </AnchorPane>
+    </children>
+
+
+</AnchorPane>
